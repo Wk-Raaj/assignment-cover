@@ -4,95 +4,85 @@
 <title>NUB Assignment</title>
 
 <style>
-
 @page{
-size:A4;
-margin:0;
+  size:A4;
+  margin:0;
 }
 
 body{
-margin:0;
-background:#ccc;
-font-family:"Times New Roman",serif;
+  margin:0;
+  background:#ccc;
+  font-family:"Times New Roman",serif;
 }
 
 .page{
-width:210mm;
-height:297mm;
-margin:auto;
-background:white;
-border:2px solid black;
-box-sizing:border-box;
-padding:18mm;
+  width:210mm;
+  height:297mm;
+  background:#fff;
+  margin:auto;
+  border:2px solid #000;
+  box-sizing:border-box;
+  padding:18mm;
 }
 
 /* HEADER */
 .header{
-display:flex;
-align-items:center;
-gap:10px;
+  text-align:center;
 }
 
-.header img{width:45px;}
+.header img{
+  width:45px;
+}
 
-.uni1{font-size:28px;font-weight:bold;}
+.uni1{font-size:30px;font-weight:bold;}
 .uni2{letter-spacing:8px;font-size:14px;}
 .uni3{font-size:11px;}
 
-.assign{text-align:center;margin-top:10px;font-weight:bold;}
-.dept{text-align:center;margin-bottom:10px;}
+.assign{margin-top:20px;font-size:18px;font-weight:bold;}
+.dept{margin-bottom:20px;}
 
-/* LINES */
-.line{margin-top:10px;}
+/* TEXT ROW */
+.row{margin-top:10px;}
 
-/* COURSE */
+/* COURSE BOX */
 .course{
-margin-top:10px;
-border:2px solid black;
-border-radius:15px;
-padding:10px;
+  margin-top:20px;
+  border:2px solid #000;
+  border-radius:18px;
+  padding:15px;
 }
 
-/* SUBMIT BOX */
-.submitrow{
-display:flex;
-justify-content:space-between;
-margin-top:15px;
+/* SUBMIT BOXES */
+.flex{
+  display:flex;
+  justify-content:space-between;
+  margin-top:30px;
 }
 
 .box{
-width:45%;
-border:2px solid black;
-border-radius:18px;
-padding:12px;
+  width:45%;
+  border:2px solid #000;
+  border-radius:22px;
+  padding:18px;
 }
 
-.box b{text-align:center;display:block;}
-
-/* BIG EMPTY AREA */
-.emptyrow{
-display:flex;
-justify-content:space-between;
-margin-top:25px;
-}
-
-.empty{
-width:45%;
-height:80px;
-border:2px solid black;
+.box b{
+  display:block;
+  text-align:center;
+  margin-bottom:12px;
 }
 
 /* DATE */
 .date{
-margin:25px auto 0;
-width:50%;
-border:2px solid black;
-border-radius:8px;
-padding:6px;
-text-align:center;
+  margin:50px auto 0;
+  width:50%;
+  border:2px solid #000;
+  border-radius:10px;
+  padding:8px;
+  text-align:center;
 }
-
 </style>
+
 </head>
 
 <body>
@@ -100,52 +90,46 @@ text-align:center;
 <div class="page">
 
 <div class="header">
-<img src="logo.png">
-<div>
+<img src="logo.png"><br>
 <div class="uni1">NORTHERN UNIVERSITY</div>
 <div class="uni2">BANGLADESH</div>
 <div class="uni3">Knowledge for Innovation and Change</div>
-</div>
-</div>
 
 <div class="assign">ASSIGNMENT</div>
 <div class="dept">Department of</div>
-
-<div class="line">Assignment No :</div>
-<div class="line">Assignment Topic:</div>
-
-<div class="course">
-Course Title:<br>
-Course Code:<br>
-Semester:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section:
 </div>
 
-<div class="submitrow">
+<div class="row">Assignment No :</div>
+<div class="row">Assignment Topic:</div>
+
+<div class="course">
+Course Title:<br><br>
+Course Code:<br><br>
+Semester:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section:
+</div>
+
+<div class="flex">
 
 <div class="box">
-<b>SUBMITTED TO</b><br>
-Name:<br>
+<b>SUBMITTED TO</b>
+Name:<br><br>
 Designation:<br><br>
 Northern University Bangladesh
 </div>
 
 <div class="box">
-<b>SUBMITTED BY</b><br>
+<b>SUBMITTED BY</b>
 Name:<br>
-ID:<br>
+ID:<br><br>
 Department:<br><br>
 Northern University Bangladesh
 </div>
 
 </div>
 
-<!-- EMPTY BOX LIKE YOUR DRAWING -->
-<div class="emptyrow">
-<div class="empty"></div>
-<div class="empty"></div>
+<div class="date">
+Submission Date:
 </div>
-
-<div class="date">Submission Date:</div>
 
 </div>
 
