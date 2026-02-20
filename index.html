@@ -4,55 +4,94 @@
 <title>Assignment Cover</title>
 <style>
 body{
-font-family: Arial;
-border:2px solid black;
-padding:30px;
-width:700px;
-margin:auto;
+    font-family: 'Times New Roman', serif;
+    background:#f2f2f2;
 }
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border:3px solid black;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+h2{
+    text-align:center;
+    margin-top:0;
+}
+
+.line{
+    margin:15px 0;
+}
+
 .box{
-border:1px solid black;
-padding:10px;
-margin:10px 0;
+    border:2px solid black;
+    padding:15px;
+    margin-top:15px;
 }
+
 .flex{
-display:flex;
-justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.smallbox{
+    width:45%;
+    border:2px solid black;
+    padding:15px;
+}
+
+.submit{
+    border:2px solid black;
+    padding:10px;
+    text-align:center;
+    margin-top:30px;
 }
 </style>
 </head>
 
 <body>
 
-<h2 align="center">NORTHERN UNIVERSITY BANGLADESH</h2>
-<h3 align="center">ASSIGNMENT</h3>
+<div class="container">
 
-<p>Assignment No:</p>
-<p>Assignment Topic:</p>
+<h1>NORTHERN UNIVERSITY BANGLADESH</h1>
+<h2>ASSIGNMENT</h2>
+
+<div class="line">Assignment No: ........................................</div>
+<div class="line">Assignment Topic: ........................................</div>
 
 <div class="box">
-Course Title:<br>
-Course Code:<br>
-Semester: &nbsp;&nbsp; Section:
+Course Title: <br><br>
+Course Code: <br><br>
+Semester: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section:
 </div>
 
 <div class="flex">
-<div class="box">
-<b>SUBMITTED TO</b><br>
-Name:<br>
-Designation:
+    <div class="smallbox">
+        <b>SUBMITTED TO</b><br><br>
+        Name:<br><br>
+        Designation:
+    </div>
+
+    <div class="smallbox">
+        <b>SUBMITTED BY</b><br><br>
+        Name:<br><br>
+        ID:<br><br>
+        Department:
+    </div>
 </div>
 
-<div class="box">
-<b>SUBMITTED BY</b><br>
-Name:<br>
-ID:<br>
-Department:
-</div>
-</div>
-
-<div class="box" align="center">
+<div class="submit">
 Submission Date:
+</div>
+
 </div>
 
 </body>
