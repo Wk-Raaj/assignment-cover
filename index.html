@@ -1,72 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NUB Assignment</title>
+<title>NUB Assignment Cover</title>
 
 <style>
+
+@page {
+size: A4;
+margin: 0;
+}
+
 body{
-background:#eee;
+margin:0;
+background:#ccc;
 font-family:"Times New Roman", serif;
 }
 
 .page{
-width:820px;
-margin:25px auto;
+width:210mm;
+height:297mm;
 background:white;
+margin:auto;
+padding:20mm;
+box-sizing:border-box;
 border:2px solid #777;
-padding:15px 25px 25px;
 }
 
 .header{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
+text-align:center;
+position:relative;
+}
+
+.header img{
+position:absolute;
+left:0;
+top:5px;
+width:45px;
+}
+
+.uni1{
+font-size:30px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.uni2{
+letter-spacing:8px;
+font-size:14px;
+margin-top:3px;
+}
+
+.uni3{
+font-size:12px;
+margin-top:3px;
+}
+
+.assign{
+margin-top:25px;
+font-weight:bold;
+font-size:18px;
+}
+
+.department{
 margin-top:5px;
 }
 
-.header img{width:50px;}
-
-.uni{text-align:center;}
-
-.uni1{font-size:26px;font-weight:bold;}
-.uni2{letter-spacing:8px;font-size:13px;}
-.uni3{font-size:11px;}
-
-.center{text-align:center;margin-top:10px;}
-
-.assign{font-size:17px;font-weight:bold;margin-top:10px;}
-
-.row{margin-top:12px;}
+.row{
+margin-top:20px;
+}
 
 .course{
-margin-top:18px;
+margin-top:25px;
 border:2px solid #777;
-border-radius:12px;
-padding:10px;
+border-radius:18px;
+padding:15px;
+}
+
+.course table{
+width:100%;
 }
 
 .flex{
 display:flex;
 justify-content:space-between;
-margin-top:22px;
+margin-top:40px;
 }
 
 .box{
-width:43%;
+width:45%;
 border:2px solid #777;
-border-radius:18px;
-padding:12px;
+border-radius:22px;
+padding:20px;
+}
+
+.box b{
+display:block;
+text-align:center;
+margin-bottom:15px;
 }
 
 .date{
-margin:22px auto 0;
-width:55%;
+margin:40px auto 0;
+width:50%;
 border:2px solid #777;
 border-radius:8px;
-padding:5px;
+padding:8px;
 text-align:center;
 }
+
 </style>
 </head>
 
@@ -76,40 +117,36 @@ text-align:center;
 
 <div class="header">
 <img src="logo.png">
-<div class="uni">
 <div class="uni1">NORTHERN UNIVERSITY</div>
 <div class="uni2">BANGLADESH</div>
 <div class="uni3">Knowledge for Innovation and Change</div>
-</div>
-</div>
 
-<div class="center">
 <div class="assign">ASSIGNMENT</div>
-<div>Department of</div>
+<div class="department">Department of</div>
 </div>
 
 <div class="row">Assignment No :</div>
 <div class="row">Assignment Topic:</div>
 
 <div class="course">
-Course Title:<br>
-Course Code:<br>
-Semester:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section:
+Course Title:<br><br>
+Course Code:<br><br>
+Semester: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section:
 </div>
 
 <div class="flex">
 
 <div class="box">
-<center><b>SUBMITTED TO</b></center><br>
-Name:<br>
+<b>SUBMITTED TO</b>
+Name:<br><br>
 Designation:<br><br>
 Northern University Bangladesh
 </div>
 
 <div class="box">
-<center><b>SUBMITTED BY</b></center><br>
+<b>SUBMITTED BY</b>
 Name:<br>
-ID:<br>
+ID:<br><br>
 Department:<br><br>
 Northern University Bangladesh
 </div>
