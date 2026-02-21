@@ -4,44 +4,39 @@
 <title>NUB Assignment</title>
 
 <style>
-
-@page{
-  size:A4;
-  margin:0;
-}
+@page{ size:A4; margin:0; }
 
 body{
-  margin:0;
-  background:#ccc;
-  font-family:"Times New Roman",serif;
+margin:0;
+background:#ccc;
+font-family:"Times New Roman",serif;
 }
 
-/* A4 paper */
+/* OUTER PAGE (border with gap like scan) */
 .wrapper{
-  width:210mm;
-  height:297mm;
-  margin:auto;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+width:210mm;
+height:297mm;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
-/* INNER BORDER WITH GAP */
 .page{
-  width:185mm;
-  height:267mm;
-  background:#fff;
-  border:2px solid #000;
-  padding:15mm;
-  box-sizing:border-box;
+width:190mm;
+height:277mm;
+background:#fff;
+border:2px solid #000;
+padding:15mm;
+box-sizing:border-box;
 }
 
 /* HEADER */
 .header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
 }
 
 .header img{width:45px;}
@@ -50,55 +45,54 @@ body{
 .uni2{letter-spacing:8px;font-size:14px;text-align:center;}
 .uni3{font-size:11px;text-align:center;}
 
-.assign{text-align:center;margin-top:15px;font-size:18px;font-weight:bold;}
+.assign{text-align:center;margin-top:18px;font-size:18px;font-weight:bold;}
 .dept{text-align:center;margin-bottom:15px;}
 
 .row{margin-top:10px;}
 
 /* COURSE */
 .course{
-  margin-top:20px;
-  border:2px solid #000;
-  border-radius:18px;
-  padding:12px;
+margin-top:20px;
+border:2px solid #000;
+border-radius:18px;
+padding:12px;
 }
 
-/* SUBMITTED BOXES */
+/* SUBMIT SECTION */
 .submit-wrap{
-  display:flex;
-  justify-content:space-between;
-  margin-top:20px; /* 20px gap from course */
+display:flex;
+justify-content:space-between;
+margin-top:40px;
 }
 
 .box{
-  width:45%;
-  border:2px solid #000;
-  border-radius:22px;
-  padding:18px;
+width:45%;
+border:2px solid #000;
+border-radius:22px;
+padding:18px;
 }
 
 .box b{
-  display:block;
-  text-align:center;
-  margin-bottom:12px;
+display:block;
+text-align:center;
+margin-bottom:12px;
 }
 
-/* 20px GAP BETWEEN TWO BOX */
-.box:last-child{
-  margin-left:20px;
-}
+/* OFFSET */
+.to-box{ transform:translateY(-50px); }
+.by-box{ transform:translateY(50px); }
 
 /* DATE */
 .date{
-  margin:100px auto 0;  /* pushed down */
-  width:50%;
-  border:2px solid #000;
-  border-radius:10px;
-  padding:8px;
-  text-align:center;
+margin:60px auto 0;
+width:50%;
+border:2px solid #000;
+border-radius:10px;
+padding:8px;
+text-align:center;
 }
-
 </style>
+
 </head>
 
 <body>
@@ -106,6 +100,7 @@ body{
 <div class="wrapper">
 <div class="page">
 
+<!-- HEADER -->
 <div class="header">
 <img src="logo.png">
 <div>
@@ -127,16 +122,17 @@ Course Code:<br><br>
 Semester:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section:
 </div>
 
+<!-- SUBMITTED BOXES -->
 <div class="submit-wrap">
 
-<div class="box">
+<div class="box to-box">
 <b>SUBMITTED TO</b>
 Name:<br><br>
 Designation:<br><br>
 Northern University Bangladesh
 </div>
 
-<div class="box">
+<div class="box by-box">
 <b>SUBMITTED BY</b>
 Name:<br>
 ID:<br><br>
