@@ -4,7 +4,7 @@
 <title>NUB Assignment</title>
 
 <style>
-@page{ size:A4; margin:0; }
+@page{size:A4;margin:0;}
 
 body{
 margin:0;
@@ -12,14 +12,13 @@ background:#ccc;
 font-family:"Times New Roman",serif;
 }
 
-/* OUTER PAGE (border with gap like scan) */
 .wrapper{
 width:210mm;
 height:297mm;
 margin:auto;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 }
 
 .page{
@@ -58,11 +57,11 @@ border-radius:18px;
 padding:12px;
 }
 
-/* SUBMIT SECTION */
+/* SUBMITTED */
 .submit-wrap{
 display:flex;
 justify-content:space-between;
-margin-top:40px;
+margin-top:50px;  /* course box থেকে নিচে নামানো */
 }
 
 .box{
@@ -78,13 +77,14 @@ text-align:center;
 margin-bottom:12px;
 }
 
-/* OFFSET */
-.to-box{ transform:translateY(-50px); }
-.by-box{ transform:translateY(50px); }
+/* gap between two boxes */
+.box + .box{
+margin-left:20px;
+}
 
 /* DATE */
 .date{
-margin:60px auto 0;
+margin:80px auto 0;
 width:50%;
 border:2px solid #000;
 border-radius:10px;
@@ -100,7 +100,6 @@ text-align:center;
 <div class="wrapper">
 <div class="page">
 
-<!-- HEADER -->
 <div class="header">
 <img src="logo.png">
 <div>
@@ -122,17 +121,16 @@ Course Code:<br><br>
 Semester:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section:
 </div>
 
-<!-- SUBMITTED BOXES -->
 <div class="submit-wrap">
 
-<div class="box to-box">
+<div class="box">
 <b>SUBMITTED TO</b>
 Name:<br><br>
 Designation:<br><br>
 Northern University Bangladesh
 </div>
 
-<div class="box by-box">
+<div class="box">
 <b>SUBMITTED BY</b>
 Name:<br>
 ID:<br><br>
@@ -142,7 +140,9 @@ Northern University Bangladesh
 
 </div>
 
-<div class="date">Submission Date:</div>
+<div class="date">
+Submission Date:
+</div>
 
 </div>
 </div>
